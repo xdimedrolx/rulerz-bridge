@@ -39,9 +39,9 @@ class SpecTypeExtension extends AbstractTypeExtension
     /**
      * {@inheritDoc}
      */
-    public function getExtendedType()
+    public static function getExtendedTypes(): iterable
     {
-        return FormType::class;
+        return [FormType::class];
     }
 
     private function getTransformer($transformer, $specClass, array $specOptions)
@@ -54,6 +54,6 @@ class SpecTypeExtension extends AbstractTypeExtension
             return new SpecificationToBooleanTransformer($specClass, $specOptions);
         }
 
-        throw new Exception\InvalidTransformer('Invalid specification transformer type: '.$transformer);
+        throw new Exception\InvalidTransformer('Invalid specification transformer type: ' . $transformer);
     }
 }
