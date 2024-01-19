@@ -23,12 +23,12 @@
     "require": {
         "php": ">=7.1",
         "xdimedrolx/rulerz": ">=0.23",
-        "symfony/validator": "^3.0|^4.0|^5.0",
-        "symfony/form": "^3.0|^4.0|^5.0"
+        "symfony/validator": "^3.0|^4.0|^5.0|^6.0",
+        "symfony/form": "^3.0|^4.0|^5.0|^6.0",
     },
     "require-dev": {
-        "phpunit/phpunit": "~7.1|~8.0",
-        "symfony/phpunit-bridge": "^3.0|^4.0|^5.0",
+        "phpunit/phpunit": "~7.1|~8.0|~9.0",
+        "symfony/phpunit-bridge": "^3.0|^4.0|^5.0|^6.0",
         "liip/rmt": "^1.2"
     }
 }
